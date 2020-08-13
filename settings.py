@@ -7,7 +7,6 @@ default_time = 0.0
 roots = [560950095]
 limit = 2000000000
 seconds_limits_album = 40000
-max_songs = 400
 telegram_file_api_limit = 1500000000
 telegram_audio_api_limit = 50000000
 db_file = "dwsongs.db"
@@ -19,7 +18,7 @@ api_chart = "https://api.deezer.com/chart"
 api_artist = "https://api.deezer.com/artist/%s"
 api_type1 = "https://api.deezer.com/search/{}/?q={}"
 api_type2 = "https://api.deezer.com/search/?q={}:\"{}\""
-song_default_image = "https://e-cdns-images.dzcdn.net/images/cover/1000x1000-000000-80-0-0.jpg"
+song_default_image = "https://e-cdns-images.dzcdn.net/images/cover/1800x1800-000000-80-0-0.jpg"
 services_supported = ["spotify", "deezer"]
 comandss = ["start", "settings", "info", "shazam", "help"]
 settingss = ["quality", "tongue"]
