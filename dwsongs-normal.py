@@ -663,11 +663,6 @@ def Link(link, chat_id, quality, message_id):
 				for a in services_supported
 			):
 
-				if tot > max_songs:
-					sendMessage(chat_id, "Fuck you")
-					delete(chat_id)
-					return
-
 				sendPhoto(
 					chat_id, image1,
 					caption = (
@@ -1578,9 +1573,7 @@ def menu(update, context):
 				).start()
 
 try:
-	print("1): Free")
-	print("2): Strict")
-	ans = input("Choose: ")
+	ans = "1"
 
 	if ans == "1" or ans == "2":
 		for a in comandss:
