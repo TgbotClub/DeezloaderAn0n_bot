@@ -89,7 +89,7 @@ def check_image(image1, ids, kind):
 				BeautifulSoup(body, "html.parser")
 				.find("meta", property = "og:image")
 				.get("content")
-				.replace("500x500", "1000x1000")
+				.replace("1800x1800", "1800x1800")
 			)
 	
 	elif kind == "album":
@@ -101,7 +101,7 @@ def check_image(image1, ids, kind):
 				BeautifulSoup(body, "html.parser")
 				.find("img", class_ = "img_main")
 				.get("src")
-				.replace("200x200", "1000x1000")
+				.replace("1800x1800", "1800x1800")
 			)
 
 	ima = request(image1).content
@@ -175,4 +175,4 @@ def fast_split(thing):
 
 def image_resize(image, size):
 	size = "{}x{}".format(size, size)
-	return image.replace("1000x1000", size)
+	return image.replace("1800x1800", size)
