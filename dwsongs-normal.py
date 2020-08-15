@@ -44,7 +44,6 @@ try:
 	acrcloud_host = config['acrcloud']['host']
 	version = config['bot_info']['version']
 	creator = config['bot_info']['creator']
-	donation_link = config['bot_info']['donation']
 	group_link = config['bot_info']['group']
 except KeyError:
 	print("Something went wrong with configuration file")
@@ -770,7 +769,7 @@ def Link(link, chat_id, quality, message_id):
 		logging.error(link)
 
 		sendMessage(
-			chat_id, "OPS :( Something went wrong please send to @An0nimia this link: {} {}, if this happens again".format(link, quality)
+			chat_id, "Something went wrong with this link: {} {}, try again".format(link, quality)
 		)
 
 	if done == 1:
@@ -1475,7 +1474,6 @@ def menu(update, context):
 				version,
 				bot_name,
 				creator,
-				donation_link,
 				group_link,
 				statisc(chat_id, "USERS"),
 				statisc(chat_id, "TRACKS")

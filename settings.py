@@ -7,13 +7,14 @@ default_time = 0.0
 roots = [560950095]
 limit = 2000000000
 seconds_limits_album = 40000
+max_songs = 4000
 telegram_file_api_limit = 1500000000
 telegram_audio_api_limit = 50000000
 db_file = "dwsongs.db"
 loc_dir = "Songs/"
 ini_file = "settings.ini"
 photo = "example.png"
-bot_name = "DeezloaderAn0n_bot"
+bot_name = "PieRatedBot"
 api_chart = "https://api.deezer.com/chart"
 api_artist = "https://api.deezer.com/artist/%s"
 api_type1 = "https://api.deezer.com/search/{}/?q={}"
@@ -23,20 +24,18 @@ services_supported = ["spotify", "deezer"]
 comandss = ["start", "settings", "info", "shazam", "help"]
 settingss = ["quality", "tongue"]
 qualities = ["FLAC", "MP3_320", "MP3_256", "MP3_128"]
-send_image_track_query = "🎧 Track: %s \n👤 Artist: %s \n💽 Album: %s \n📅 Date: %s"
-send_image_album_query = "💽 Album: %s \n👤 Artist: %s \n📅 Date: %s \n🎧 Tracks amount: %d"
-send_image_artist_query = "👤 Artist: %s \n💽 Album numbers: %d \n👥 Fans on Deezer: %d"
-tags_query = "💽 Album: %s\n📅 Date: %s\n📀 Label: %s\n🎵 Genre: %s"
-info_msg = "🔺 Version: %s\n🔻 Name: @%s\n✒️ Creator: @%s\n💵 Donation: %s\n📣 Forum: %s\n👥 Users: %d\n⬇️ Total downloads: %d"
-send_image_playlist_query = "📅 Creation: %s \n👤 User: %s \n🎧 Tracks amount: %d"
+send_image_track_query = "Track: %s \nArtist: %s \nAlbum: %s \nDate: %s"
+send_image_album_query = "Album: %s \nArtist: %s \nDate: %s \nTracks amount: %d"
+send_image_artist_query = "Artist: %s \nAlbum numbers: %d \nFans on Deezer: %d"
+tags_query = "Album: %s\nDate: %s\nLabel: %s\nGenre: %s"
+info_msg = "Version: %s\nName: @%s\nCreator: %s\nChannel: %s\nUsers: %d\nTotal downloads: %d"
+send_image_playlist_query = "Creation: %s \nUser: %s \nTracks amount: %d"
 insert_query = "INSERT INTO DWSONGS (id, query, quality) values ('%s', '%s', '%s')"
 where_query = "SELECT query FROM DWSONGS WHERE id = '{}' and quality = '{}'"
 user_exist = "SELECT chat_id FROM CHAT_ID where chat_id = '%d'"
 share_message = "tg://msg?text=Start @%s for download all the songs which you want ;)" % bot_name
 start_message = "Welcome to @%s \nPress '/' to get commands list" % bot_name
-not_supported_links = "Sorry :( The bot doesn't support this link %s :("
-rate_link = "https://t.me/BotsArchive/298"
-end_message = "FINISHED :) Rate me here %s" % rate_link
+not_supported_links = "The bot doesn't support this link %s :("
 
 help_message = (
 	"/start: Start the bot" +
@@ -74,7 +73,7 @@ qualities_keyboard = [
 first_time_keyboard = [
 	[
 		InlineKeyboardButton(
-			"✅",
+			"Pie Rated Bot",
 			url = "t.me/%s?start" % bot_name
 		)
 	]
@@ -83,63 +82,63 @@ first_time_keyboard = [
 queries = {
 	"top": {
 		"query": "%s/top?limit=30",
-		"text": "TOP 30 🔝"
+		"text": "TOP 30"
 	},
 
 	"albums": {
 		"query": "%s/albums",
-		"text": "ALBUMS 💽"
+		"text": "ALBUMS"
 	},
 
 	"radio": {
 		"query": "%s/radio",
-		"text": "RADIO 📻"
+		"text": "RADIO"
 	},
 
 	"related": {
 		"query": "%s/related",
-		"text": "RELATED 🗣"
+		"text": "RELATED"
 	},
 
 	"download": {
-		"text": "Download ⬇️"
+		"text": "Download"
 	},
 
 	"info": {
-		"text": "Info ❕"
+		"text": "Info"
 	},
 
 	"back": {
-		"text": "BACK 🔙"
+		"text": "BACK"
 	},
 
 	"s_art": {
 		"query": "art: %s",
-		"text": "Search by artist 👤"
+		"text": "Search by artist"
 	},
 
 	"s_alb": {
 		"query": "alb: %s",
-		"text": "Search by album 💽"
+		"text": "Search by album"
 	},
 
 	"s_pla": {
 		"query": "pla: %s",
-		"text": "Search playlist 📂"
+		"text": "Search playlist"
 	},
 
 	"s_lbl": {
 		"query": "lbl: %s",
-		"text": "Search label 📀"
+		"text": "Search label"
 	},
 
 	"s_trk": {
 		"query": "trk: %s",
-		"text": "Search track 🎧"
+		"text": "Search track"
 	},
 
 	"s_": {
 		"query": "%s",
-		"text": "Global search 📊"
+		"text": "Global search"
 	}
 }
