@@ -1,7 +1,37 @@
 {
-  "name": "Telegram Robot",
-  "description": "Telegram is ♥️",
-  "repository": "https://github.com/bhardwajjEE/TELegram-RoBot",
-  "logo": "https://telegra.ph/file/8d2ab84ced3795814e728.jpg",
-  "keywords": ["Robot", "Telegram"]
+  "name": "SpotifyDLrobot",
+  "description": "Spotify Telegram Bot",
+  "logo": "https://i.hizliresim.com/L9wftc.png",
+  "keywords": [
+    "telegram",
+    "spotify"
+  ],
+  "repository": "https://github.com/bhardwajjEE",
+  "website": "https://t.me/PRIYANSHU_BHARDWAJ",
+  "success_url": "https://t.me/thespotifyDlrobot",
+  "env": {
+    "DEEZER_TOKEN": {
+      "description": "Setting this to ANYTHING will enable environment variables.",
+      "value": "ANYTHING"
+    },
+    "BOT_TOKEN": {
+      "description": "Get this value from my.telegram.org! Please do not steal",
+      "value": "8"
+    },
+    "ARCLOUD_HOST": {
+      "description": "Get this value from my.telegram.org! Please do not steal",
+      "value": "7245de8e747a0d6fbe11f7cc14fcc0bb"
+    },
+    "ARCLOUD_SECRET": {
+      "description": "@BotFather",
+      "value": ""
+    },
+    "ARCLOUD_KEY": {
+      "description": "Download Path",
+      "value": "Downloads/"
+    }
+  },
+  "buildpacks": [{
+    "url": "heroku/python"
+  }]
 }
