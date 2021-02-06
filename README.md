@@ -1,6 +1,10 @@
 # DeezloaderAn0n_bot
 This project has been created for integrate deezloader library in a Telegram bot.
 
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+
 # Disclaimer
 
 - I am not responsible for the usage of this program by other people.
