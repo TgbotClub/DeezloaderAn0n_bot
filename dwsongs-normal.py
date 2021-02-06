@@ -33,18 +33,14 @@ from telegram import (
 	InlineQueryResultArticle, InputTextMessageContent
 )
 
-config = ConfigParser()
-config.read(ini_file)
-
-try:
-	deezer_token = config['login']['token']
-	bot_token = config['bot']['token']
-	acrcloud_key = config['acrcloud']['key']
-	acrcloud_hash = config['acrcloud']['secret']
-	acrcloud_host = config['acrcloud']['host']
-	version = config['bot_info']['version']
-	creator = config['bot_info']['creator']
-	group_link = config['bot_info']['group']
+	deezer_token = 04b8272100daec02539d64e54496237dc46aaac79ad701c0dd6a4e53a85cd7d2f030f622fed3f43d74e060183bc1bfd205918c1b53b3f9e957720c8bf1bb085f363d267b152a91d30862c8c8b67d6463e4c6dd4b121edab52f45d7f81bf93f1b
+	bot_token = 1667386501:AAHjW22baGraNpz0-3iW_3VC8iOe83R167Q
+	acrcloud_key = 252870f1602fd95ebe0cec19129740cf
+	acrcloud_hash = dooanKL5OEdtPpXwtVUtLKWs6i4yi9QBak8RAkHy
+	acrcloud_host = https://identify-eu-west-1.acrcloud.com
+	version = 0
+	creator = Telegram
+	group_link = https://telegramE.org
 except KeyError:
 	print("Something went wrong with configuration file")
 	exit()
