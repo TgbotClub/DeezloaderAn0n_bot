@@ -29,6 +29,22 @@
     "ARCLOUD_KEY": {
       "description": "Download Path",
       "value": "Downloads/"
+    },
+   "BOT_INFO_VERSION": {
+      "description": "@BotFather",
+      "value": ""
+    },
+   "BOT_INFO_CREATOR": {
+      "description": "@BotFather",
+      "value": ""
+    },
+   "DONATE_LINK": {
+      "description": "@BotFather",
+      "value": ""
+    },
+   "CHAT_LINK": {
+      "description": "@BotFather",
+      "value": ""
     }
   },
   "buildpacks": [{
